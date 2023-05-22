@@ -1,0 +1,42 @@
+.telaInicialContainer {
+ -fx-background-color: #f5f5f5;
+}
+
+.telaInicialContainer SVGPath {
+    -fx-fill: orange;
+}
+
+.telaInicialContainer Button {
+    -fx-background-color: orange;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+
+}
+
+.aleatoriamentePosicionarButton: hover {
+    -fx-background-color: #ff7300;
+    -fx-effect: dropshadow( gaussian , darkgray , 10 , 0.5 , 5 , 5 );
+}
+
+.manualmenteButtonTelaInicial: hover {
+    -fx-background-color: #ff7300;
+    -fx-effect: dropshadow( gaussian , darkgray , 10 , 0.5 , 5 , 5 );
+}
+
+.fecharjogoButtonTelaInicial {
+    -fx-background-color: gray;
+    -fx-font-size: 16px;
+    -fx-pref-width: 120px;
+}
+
+.fecharjogoButtonTelaInicial: hover {
+    -fx-background-color: #626262;
+    -fx-effect: dropshadow( gaussian , darkgray , 10 , 0.5 , 2 , 2 );
+}
+
+.labelparaDica {
+    -fx-alignment: center;
+}

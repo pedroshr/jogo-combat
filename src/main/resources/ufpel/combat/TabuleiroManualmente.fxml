@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="tabuleiroAnchorPane" fx:id="tabuleiroAnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="fundobrancoBox" stylesheets="@Tabuleiro.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ufpel.combat.TabuleiroManualmenteController">
+   <children>
+      <VBox fx:id="vboxPecas" layoutX="647.0" layoutY="90.0" prefHeight="360.0" prefWidth="326.0" styleClass="vboxPecas">
+         <children>
+            <GridPane fx:id="gridPecas" alignment="CENTER" prefHeight="450.0" prefWidth="326.0" styleClass="fundobrancoBox" stylesheets="@Tabuleiro.css">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="img00" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posBandeira" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/bandeira.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img01" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posBomba1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/bomba.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img02" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posBomba2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/bomba.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img10" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posEspiao" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/espiao.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img11" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posSoldado1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/soldado.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img12" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posSoldado2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/soldado.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img20" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posSoldado3" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/soldado.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img21" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posArmeiro1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/armeiro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img22" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posArmeiro2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/armeiro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img31" fitHeight="85.0" fitWidth="85.0" onMouseClicked="#posMarechal" pickOnBounds="true" preserveRatio="true" styleClass="vboxLabel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@img/laranja/marechal.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox fx:id="vboxLabel" layoutX="647.0" prefHeight="90.0" prefWidth="353.0" styleClass="fundobrancoBox" stylesheets="@Tabuleiro.css">
+         <children>
+            <Label fx:id="labelClique" alignment="CENTER" prefHeight="59.0" prefWidth="344.0" styleClass="labelClique" stylesheets="@Tabuleiro.css" text="Clique em uma das peças e, em seguida, na posição que você quer colocá-la!" textAlignment="RIGHT" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="hboxTabuleiro" prefHeight="600.0" prefWidth="647.0" styleClass="fundobrancoBox">
+         <children>
+            <GridPane fx:id="gridPane" maxHeight="500.0" maxWidth="500.0" onMouseClicked="#clickGridPane" prefHeight="500.0" prefWidth="500.0" styleClass="gridPane" stylesheets="@Tabuleiro.css">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <HBox.margin>
+                  <Insets left="100.0" top="50.0" />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+      <GridPane layoutX="647.0" layoutY="450.0" prefHeight="150.0" prefWidth="353.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="jogarButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#jogarButton" prefWidth="240.0" styleClass="jogarButton" stylesheets="@Tabuleiro.css" text="JOGAR" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="debugButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#debugButton" styleClass="jogarButton" stylesheets="@Tabuleiro.css" text="DEBUG" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

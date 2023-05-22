@@ -1,0 +1,88 @@
+.fundobrancoBox {
+    -fx-background-color: #ececec;
+}
+
+.gridPane {
+    -fx-grid-lines-visible: true;
+    -fx-background-color: #dadada;
+}
+
+/*
+.gridPane Line {
+    -fx-stroke: #000000;
+    -fx-stroke-width: 10px;
+    -fx-stroke-line-cap: round;
+}
+*/
+
+.jogarButton {
+    -fx-background-color: orange;
+    -fx-font-size: 20px;
+    -fx-pref-width: 120px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.jogarButton: hover {
+    -fx-background-color: #ff7300;
+    -fx-effect: dropshadow(gaussian, darkgray, 10, 0.5, 5, 5);
+}
+
+.labelClique {
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-font-size: 18px;
+}
+
+.gridPecas {
+    -fx-grid-lines-visible: false;
+}
+
+.vbox {
+    -fx-background-color: #ececec;
+    -fx-alignment: center;
+    -fx-spacing: 100;
+}
+
+.pedirDicaButton{
+    -fx-background-color: orange;
+    -fx-font-size: 20px;
+    -fx-pref-width: 150px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.pedirDicaButton: hover {
+    -fx-background-color: #ff7300;
+    -fx-effect: dropshadow(gaussian, darkgray, 10, 0.5, 5, 5);
+}
+
+.buttonGrande{
+    -fx-background-color: orange;
+    -fx-font-size: 20px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 80px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+.buttonGrande: hover {
+    -fx-background-color: #ff7300;
+    -fx-effect: dropshadow(gaussian, darkgray, 10, 0.5, 5, 5);
+}
+
+.voltarButton{
+    -fx-background-color: gray;
+    -fx-font-size: 20px;
+    -fx-pref-width: 120px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.voltarButton: hover {
+    -fx-background-color: #4f4f4f;
+    -fx-effect: dropshadow(gaussian, darkgray, 10, 0.5, 5, 5);
+}

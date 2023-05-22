@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane fx:id="anchorPaneTelaInicial" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="telaInicialContainer" stylesheets="@TelaInicial.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ufpel.combat.TelaInicioController">
+   <children>
+      <SVGPath fx:id="svgLogoTelaInicial" content="M7.05 13.406l3.534 3.536-1.413 1.414 1.415 1.415-1.414 1.414-2.475-2.475-2.829 2.829-1.414-1.414 2.829-2.83-2.475-2.474 1.414-1.414 1.414 1.413 1.413-1.414zM3 3l3.546.003 11.817 11.818 1.415-1.414 1.414 1.414-2.474 2.475 2.828 2.829-1.414 1.414-2.829-2.829-2.475 2.475-1.414-1.414 1.414-1.415L3.003 6.531 3 3zm14.457 0L21 3.003l.002 3.523-4.053 4.052-3.536-3.535L17.457 3z" layoutX="488.0" layoutY="127.0" scaleX="7.0" scaleY="7.0" />
+      <Text fx:id="combatTextTelaInicial" layoutX="411.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Combat">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Label fx:id="perguntaTelaInicial" layoutX="292.0" layoutY="330.0" text="Como você deseja posicionar as peças?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="criadoporTelaInicial" layoutX="277.0" layoutY="544.0" text="Criado por Bernardo Ferrão, Mathias Milbrath e Pedro Rosa" textFill="#6b6b6b">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button id="aleatoriamentePosicionarButton" fx:id="aleatoriamenteButtonTelaInicial" layoutX="285.0" layoutY="386.0" mnemonicParsing="false" onAction="#aleatoriamenteButton" styleClass="aleatoriamentePosicionarButton" stylesheets="@TelaInicial.css" text="Aleatoriamente" />
+      <Button id="fecharjogoButtonTelaInicial" fx:id="fecharjogoButtonTelaInicial" layoutX="562.0" layoutY="477.0" mnemonicParsing="false" onAction="#fecharjogoButtonTelaInicial" styleClass="fecharjogoButtonTelaInicial" text="Fechar jogo" />
+      <Button fx:id="manualmenteButtonTelaInicial" layoutX="522.0" layoutY="386.0" mnemonicParsing="false" onAction="#manualmenteButton" styleClass="manualmenteButtonTelaInicial" stylesheets="@TelaInicial.css" text="Manualmente" />
+      <Button id="guiaButtonTelaInicial" fx:id="guiaButtonTelaInicial" layoutX="325.0" layoutY="477.0" mnemonicParsing="false" onAction="#guiaButton" styleClass="fecharjogoButtonTelaInicial" text="Guia" />
+   </children>
+</AnchorPane>
